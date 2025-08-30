@@ -8,8 +8,8 @@ const createTokenAndSetCookie = (res, userId) => {
   // httpOnly cookie
   res.cookie(COOKIE_NAME, token, {
     httpOnly: true,
-    secure: false, // set true in production with HTTPS
-    sameSite: 'lax',
+    secure: true, // set true in production with HTTPS
+    sameSite: "None",
     maxAge: 10 * 60 * 1000 // 10 minutes
   });
 };
