@@ -25,8 +25,7 @@ cd SIH_TEAM_MANAGEMENET
 # Backend
 cd backend
 npm install
-npm run dev
-
+node server.js
 # Frontend
 cd ../frontend
 npm install
